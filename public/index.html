@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, user-scalable=no" />
+<meta charset="UTF-8" />
+<link rel="shortcut icon" href="favicon.ico">
+<script type="text/javascript" src="speedtest.js"></script>
+<script type="text/javascript" src="scriptsPedro.js"></script>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+<link rel="stylesheet" href="style.css">
+<title>LibreSpeedtest</title>
+</head>
+<body>
+<h1>LibreSpeed Example Pedro</h1>
+
+<div class="container">
+    <img src="https://raw.githubusercontent.com/librespeed/speedtest/master/.logo/logo3.png" width="320" height="205" />
+</div>
+<div id="testWrapper">
+	<div id="startStopBtn" class="btn btn-primary" onclick="startStop()"></div>
+	<div id="resolutionBtn" class="btn btn-danger" onclick="maxVideoResolution()">Resolucao Videos</div>
+	<div id="test">
+        <div class="testGroup">
+			<div class="testArea2">
+				<div class="testName">Ping</div>
+				<div id="pingText" class="meterText" style="color:#AA6060"></div>
+				<div class="unit">ms</div>
+			</div>
+			<div class="testArea2">
+				<div class="testName">Jitter</div>
+				<div id="jitText" class="meterText" style="color:#AA6060"></div>
+				<div class="unit">ms</div>
+			</div>
+		</div>
+		<div class="testGroup">
+			<div class="testArea">
+				<div class="testName">Download</div>
+				<canvas id="dlMeter" class="meter"></canvas>
+				<div id="dlText" class="meterText"></div>
+				<div class="unit">Mbps</div>
+			</div>
+			<div class="testArea">
+				<div class="testName">Upload</div>
+				<canvas id="ulMeter" class="meter"></canvas>
+				<div id="ulText" class="meterText"></div>
+				<div class="unit">Mbps</div>
+			</div>
+		</div>
+		<div id="ipArea">
+			<span id="ip"></span>
+		</div>
+		<div aria-live="polite" aria-atomic="true" class="d-flex justify-content-center align-items-center w-100">
+
+			<!-- Then put toasts within -->
+			<div class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+			  <div class="toast-header">
+				<img src="..." class="rounded me-2" alt="...">
+				<strong class="me-auto">Resolucao maxima</strong>
+				<small id="pedrovelocidadedl"></small>
+				<button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+			  </div>
+			  <div class="toast-body">
+				Hello, world! This is a toast message.
+			  </div>
+			</div>
+		  </div>
+	</div>
+	<a href="https://github.com/librespeed/speedtest">Source code</a>
+</div>
+<script type="text/javascript">setTimeout(function(){initUI()},100);</script>
+</body>
+</html>
