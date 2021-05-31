@@ -1,0 +1,18 @@
+{
+    "short_name": "LibreSpeed",
+    "name": "LibreSpeedtest",
+    "start_url": ".",
+    "display": "standalone",
+    "theme_color": "#2f44b8",
+    "theme-color": "#2f44b8",
+    "background_color": "#000000",
+    "background-color": "#000000",
+    "description": "Velocidade Internet e Qualidade de videos",
+    "icons": [
+      {
+        "src": "imagens/icone1.png",
+        "type": "imagens/png",
+        "sizes": "820x820"
+      }
+    ]
+  }
